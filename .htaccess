@@ -1,11 +1,2 @@
-RewriteEngine on
-RewriteBase /
-
-# Rewrites all URLS without dashboard in them
-RewriteCond %{REQUEST_URI} !^/dashboard/
-
-# Rewrites all URLS [Replace "example" with the actual domain, without the TLD (.com, .net, .biz, etc)]
-RewriteCond %{HTTP_HOST} ^(www\.)?example\.
-
-# Rewrite all those to insert /folder
-RewriteRule ^(.*)$ /dashboard/$1 [L]
+RewriteEngine On
+RewriteRule ^$ /dashboard [L]
