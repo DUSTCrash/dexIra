@@ -1,6 +1,6 @@
 {
   "rewrites": [
     { "source": "https://reflectinu.vercel.app/", "destination": "/dashboard" },
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/", "destination": "/" }
   ]
 }
